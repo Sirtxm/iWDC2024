@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/Marui.png" sizes="32*32">
+    <title>3in</title>
+</head>
+<body>
+    <!--header section-->
+    <header class="header-bg">
+        <div class="header-contents">
+            <div class="header-logo">
+                <img src="images/orengi.png" class="site-logo" alt="website_logo">
+            </div>
+            <nav class="header-nav">
+                <ul class="header-nav-lists">
+                    <li class="nav-link"><a href="#">Home</a></li>
+                    <li class="nav-link"><a href="#title-threeRssection">3Rs</a></li>
+                    <li class="nav-link"><a href="#dashboardSection">Dashboard</a></li>
+                    <li class="nav-link"><a href="#aboutusSection">About us</a></li>
+                </ul>
+            </nav>  
+        </div>  
+    </header>
+
+    <!-- landingpage Section-->
+    <div class="landingpage-container">
+        <div class="landingpage-title">
+            <h1 id="title_first">IS THIS</h1>
+            <h1 id="title_second">THE</h1>
+        </div>
+        <div class="landingpage-img">
+            <img src="images/aobag.png" class="landing-img01" alt="thrre_bag_img">
+            <img src="images/aocan.png" class="landing-img02" alt="thrre_can_img">
+            <img src="images/aobottle.png" class="landing-img03" alt="thrre_bottle_img">
+        </div>
+        <div class="landingpage-end">
+            <h1 id="title_third">RIGHT WAY?</h1>
+        </div>
+    </div>
+
+    <!-- Parallax Section -->
+    <div class="parallax" id="title-parallax">
+        <img src="images/closecloseopen2.png" alt="Background parallax" id="background-parallax">
+        <img src="images/together2.png" alt="picture" id="picture-parallax">
+        <img src="images/little.png" alt="cut background" id="cuting-background">
+       
+        <div class="paraSection01">
+            <h3 class="minTitle01">
+                Our website
+            </h3>
+            <p class="minSentence01">
+                offers detailed data on plastic waste in<br>
+                Japan and Thailand over the past decade,<br>
+                along with insights into waste reduction and management practices.
+            </p>
+        </div>
+    </div>
+
+    <!--3Rs section-->
+    <div class="three-section"  id="title-threeRssection">
+        <div class="threeR">
+            <h2 class="threeRs-topic">
+                3Rs
+            </h2>
+            <div class="threeR-sentence">
+                The concept and approach for the efficient use of available resources can help <br>
+                reduce the amount of waste by focusing on reducing usage, reusing, and recycling waste.<br>
+            </div>
+        </div>
+        <!-- <p class="into-threeR">Here is the flow of 3R</p> -->
+        <div class="threeRsimg-container">
+            <img src="images/OBJ_recy.png" class="obj-recy01" alt="recy_img">
+            <img src="images/OBJ_recy1.png" class="obj-recy02" alt="recy1_img">
+            <img src="images/OBJ_reuse.png" class="obj-reuse01" alt="reuse_img">
+            <img src="images/OBJ_reuse1.png" class="obj-reuse02" alt="reuse1_img">
+            <img src="images/OBJ_redu.png" class="obj-redu01" alt="redu_img">
+            <img src="images/OBJ_redu1.png" class="obj-redu02" alt="redu1_img">
+            <div class="simple-img">
+                <img src="images/3Rs1.png" class="threeRs-img" alt="3Rs_outline">
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Section -->
+    <h1 id="title-card">Re-card</h1>
+    <p class="into-card">
+        Let me explain what reuse, reduces and recycle is.<br>
+        And We will explain the advantages of each.
+    </p>
+    <div class="threeRs-detail">
+        <div class="card01">
+            <div class="Card-title01">
+                Recycle
+            </div>
+            <div class="card-sentence01">
+                Recycling involves processing or improving the quality of waste or used materials to restore them to their original.
+            </div>
+            <label class="popup-bottom01">
+                <div class="background" id="background01">
+                    <button class="button01" onclick="showReducePopup()">READ MORE</button>
+                </div>
+                <div class="overlay01" id="overlay01"></div>
+                <div id="popup01">
+                    <div class="popup-container">
+                        <img src="images/recy_card.png" class="reduceImg" alt="reduce_img">
+                        <div class="reduce-info">
+                            Processing or upgrading waste or used<br>
+                            materials to restore them to their original<br>
+                            or near-original quality, or to produce<br>
+                            Inew raw materials or new products.<br>
+                        </div>
+                        <div class="wrap">
+                            <h2 class="sub-title">
+                                Benefts of recycle
+                            </h2>
+                        </div>
+                        <div class="reduce-wrapper">
+                            <ul>
+                                <li class="reduce-sentence">
+                                    Help reduce the burden of waste disposal from industrial processes.
+                                </li>
+                                <li class="reduce-sentence">
+                                    Can save at least half of the cost of purchasing new chemicals.
+                                </li>
+                                <li class="reduce-sentence">
+                                    Helps the government save money on importiing chemicals from abread.
+                                </li>
+                                <li class="reduce-sentence">
+                                    Promotes the efficient use of global resources idea.
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="button-end01" onclick="closeReducePopup()">Close</button>
+                    </div>
+                </div>
+            </label>
+            <img src="images/3R botol boy.png" class="reducecord-image" alt="reuse_img">
+        </div>
+
+        <div class="card02">
+            <div class="Card-title02">
+                Reuse
+            </div>
+            <div class="card-sentence02">
+                Reusing waste, packaging, or leftover materials without undergoing processing or transformation.
+            </div>
+            <label class="popup-bottom02">
+                <div class="background" id="background02">
+                    <button class="button02" onclick="showReusePopup()">READ MORE</button>
+                </div>
+                <div class="overlay02" id="overlay02"></div>
+                <div id="popup02">
+                    <div class="popup-container">
+                        <img src="images/reuse_card.png" alt="reduce_img">
+                        <div class="reduce-info">
+                                When you give something you were going to<br>
+                                throw away to someone who wants it and use<br>
+                                ii. This includes flea markets, thrift shops,<br>
+                                and donations. It is important to use the<br>
+                                purchased items carefully and repeatedly.
+                            </div>
+                            <div class="wrap">
+                                <h2 class="sub-title">
+                                    Benefts of reuse
+                                </h2>
+                            </div>
+                            <div class="reuse-wrapper">
+                            <ul>
+                                <li class="reuse-sentence">
+                                    Help reduce the burden of waste disposal from industrial processes.
+                                </li>
+                                <li class="reuse-sentence">
+                                    Can save at least half of the cost of purchasing new chemicals.
+                                </li>
+                                <li class="reuse-sentence">
+                                    Helps the government save money on importiing chemicals from abread.
+                                </li>
+                                <li class="reuse-sentence">
+                                    Promotes the efficient use of global resources idea.
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="button-end02" onclick="closeReusePopup()">Close</button>
+                    </div>
+                </div>
+            </label>
+            <img src="images/3R paperrr.png" class="reusecord-image" alt="reuse_img">
+        </div>
+
+        <div class="card03">
+            <div class="Card-title03">
+                Reduce
+            </div>
+            <div class="card-sentence03">
+                Reducing  resource consumption is the first step because it is the easiest and most effective method.
+            </div>
+            <label class="popup-bottom03">
+                <div class="background" id="background03">
+                    <button class="button03" onclick="showRecyclePopup()">READ MORE</button>
+                </div>
+                <div class="overlay03" id="overlay03"></div>
+                <div id="popup03">
+                    <div class="popup-container">
+                        <img src="images/redu_card.png" alt="reduce_img">
+                        <div class="reduce-info">
+                            Reduce refers to reducing the amont of<br>
+                            resources uesd in manufacturing a product<br>
+                            and reducing the amount of waste generated<br>
+                            It can reduce energy usage, reduce costs, and<br>
+                            reduce waste disposal costs.
+                        </div>
+                        <div class="wrap">
+                            <h2 class="sub-title">
+                                Benefts of reduce
+                            </h2>
+                        </div>
+                        <div class="recycle-wrapper">
+                            <ul>
+                                <li class="recycle-sentence">
+                                    Help reduce the burden of waste disposal from industrial processes.
+                                </li>
+                                <li class="recycle-sentence">
+                                    Can save at least half of the cost of purchasing new chemicals.
+                                </li>
+                                <li class="recycle-sentence">
+                                    Helps the government save money on importiing chemicals from abread.
+                                </li>
+                                <li class="recycle-sentence">
+                                    Promotes the efficient use of global resources idea.
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="button-end03" onclick="closeRecyclePopup()">Close</button>
+                    </div>
+                </div>
+            </label>
+            <img src="images/3R eco bag.png" class="recyclecord-image" alt="reuse_img">
+        </div>
+    </div>
+    
+    <!-- Dashboard Section -->
+    <div id="dashboardSection">
+        <h1 id="title-dashboard">DASHBOARD</h1>
+        <p class="into-dashboard">
+            Using data on plastic waste from Japan and Thailand,<br>
+            we will introduce the differences in waste disposal methods between the two countries.
+        </p>
+        <div id="dashboard">
+            <div class="chart-container">
+                <canvas id="wasteComparisonChart"></canvas>
+                <div class="dashSecntence">
+                    <p id="dashDetailAll">the data on plastic waste over the past 9 years for Japan and Thailand
+                        Japan shows a declining trend year by year, while Thailand shows an increasing and decreasing trend.<br>
+                        It is evident that the graphs do not overlap due to the differing population sizes of Japan and Thailand.</p>
+                    <p id="dashDetailJapan">
+                        From the graph, it is clear that the amount of plastic waste is quite high.
+                        After a few years, the graph shows a gradual decline.<br>
+                        However, between 2016 and 2018, the graph remains relatively stable.<br>
+                        In 2019, plastic waste began to decrease gradually due to effective waste management practices.
+                    </p>
+                    <p id="dashDetailThai">
+                        The graph shows fluctuating trends, peaking in 2019 due to China's restrictions on waste raw material imports,<br>
+                        which left plastic waste without export destinations.<br>
+                        However, improvements in waste management since then have significantly reduced plastic waste.
+                    </p>
+                    <div class="refer">
+                        reference:<br>
+                        https://jp.statista.com/statistics/1357545/japan-plastic-waste-disposal-volume<br>
+                        https://www.statista.com/statistics/1393790/thailand-plastic-waste-imports-volume/<br>
+                    </div>
+                </div>
+            </div>
+            <div class="buttonLine">
+                <button id="totalButton">
+                    <img src="images/nittai.png">
+                </button>
+                <button id="japanButton">
+                    <img src="images/nihon.png">
+                </button>
+                <button id="thaiButton">
+                    <img src="images/tai.png">
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Ourteam Section -->
+     <div id="aboutusSection">
+        <div class="ourteam-title" id="title-aboutUs"><h2>Our team</h2></div>
+        <div class="card-container">
+            <div class="card">
+                <img src="images/Stamp.jpg" alt="Stamp" class="card-image">
+                <h3 class="card-title">Teeraphat Thongchern</h3>
+                <p class="card-description">Programmer</p>
+            </div>
+            <div class="card">
+                <img src="images/Junchan.jpg" alt="Junchan" class="card-image">
+                <h3 class="card-title">Junichi Hasegawa</h3>
+                <p class="card-description">Programmer</p>
+            </div>
+            <div class="card">
+                <img src="images/Milk.jpg" alt="Milk" class="card-image">
+                <h3 class="card-title">Donnapa Thongkamsuk</h3>
+                <p class="card-description">Web Design</p>
+            </div>
+            <div class="card">
+                <img src="images/Uta.jpg" alt="Uta" class="card-image">
+                <h3 class="card-title">Uta Hirafuji</h3>
+                <p class="card-description">Web Design</p>
+            </div>
+        </div>
+     </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="images/HIU RMUTT.png" class="footerImg" alt="">
+        </div>
+        <div class="about-us">
+            <h2>ABOUT US</h2>
+            <p>Welcome to our website! We provide resources for sustainable living through recycling, reusing, 
+                and reducing waste, with a special focus on tackling plastic waste.
+                Aligned with SDG 12.5, our mission is to inspire individuals and communities to minimize waste, 
+                particularly plastic waste, and enhance resource efficiency</p>
+        </div>
+        <p class="copyright">&copy; 2024 iWDC 2024 | All Right Reserved</p>
+    </footer>
+    
+<!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
